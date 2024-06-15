@@ -1,0 +1,476 @@
+/*
+ Theme Name:     Divi Child WT
+ Theme URI:      https://www.elegantthemes.com/gallery/divi/
+ Description:    Divi Child Theme
+ Author:         Elegant Themes
+ Author URI:     https://www.elegantthemes.com
+ Template:       Divi
+ Version:        1.0.0
+*/
+ 
+ 
+/* =Theme customization starts here
+------------------------------------------------------- */
+
+/** Hidden Inquiry - displays on product pages as a popup window for more information **/
+
+.hiddenInquiryForm, .hiddenInquiryStatusMessage {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;  
+  border-radius: 10px;
+}
+
+
+/* Style for the contact form and status messages */
+
+.hiddenInquiryForm, .hiddenInquiryStatusMessage {
+  z-index:9001;
+  color: #666;
+  background-color: #ebedf2;
+  background: -webkit-gradient( linear, left bottom, left top, color-stop(0,#dfe1e5), color-stop(1, #ebedf2) );
+  background: -moz-linear-gradient( center bottom, #dfe1e5 0%, #ebedf2 100% );  
+  border: 1px solid #aaa;
+  -moz-box-shadow: 0 0 1em rgba(0, 0, 0, .5);
+  -webkit-box-shadow: 0 0 1em rgba(0, 0, 0, .5);
+  box-shadow: 0 0 1em rgba(0, 0, 0, .5);
+  position:stick;
+  opacity: .95;
+}
+
+.et_pb_row .et_pb_column.et-last-child, .et_pb_row .et_pb_column:last-child, .et_pb_row_inner .et_pb_column.et-last-child, .et_pb_row_inner .et_pb_column:last-child {
+	z-index:8;
+}
+
+/* The form dimensions */
+
+.hiddenInquiryForm {
+  width: 560px;
+  height: 462px;
+  padding: 0 1.5em 1.5em 1.5em;
+  margin: 0 auto;
+}
+
+
+
+/* Position the form in the middle of the window (if JavaScript is enabled) */
+
+.hiddenInquiryForm.positioned {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+
+/* Dimensions and position of the status messages */
+
+.hiddenInquiryStatusMessage {
+  display: none;
+  margin: auto;
+  width: 30em;
+  height: 8em;
+  padding: 1.5em;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.hiddenInquiryStatusMessage p {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+
+#hiddenInquirySenderFirstName {
+	width:220px;
+}
+
+#hiddenInquirySenderLastName {
+	width:220px;
+}
+
+#hiddenInquiryMessage {
+	width:475px;
+}
+
+#hiddenInquirySenderEmail {
+	width:475px;
+}
+
+
+
+
+
+/* The fields */
+
+
+
+/* Place a border around focused fields, and hide the inner shadow */
+
+.hiddenInquiryForm *:focus {
+  border: 1px solid #66f;
+  outline: none;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+
+/* Display correctly filled-in fields with a green background */
+
+.hiddenInquiryInput:valid, .hiddenInquiryInput:valid {
+  background: #dfd;
+}
+
+
+/* The Send and Cancel buttons //red next button = cb2c30 */
+
+
+
+#hiddenInquirySendMessageButton, #hiddenInquiryCancelButton {
+  float: right;
+  margin: 2em 1em 0 1em;
+  width: 10em;
+  padding: .5em;
+  border: 1px solid #666;
+  -moz-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  -webkit-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  color: #fff;
+  background: #cb2c30;
+  font-size: 1em;
+  line-height: 1em;
+  font-weight: bold;
+}
+
+#hiddenInquirySendMessageButton:hover,
+#hiddenInquirySendMessageButton:active,
+#hiddenInquiryCancelButton:hover,
+#hiddenInquiryCancelButton:active {
+  cursor: pointer;
+  opacity: 1;
+}
+
+#hiddenInquirySendMessageButton:active, #hiddenInquiryCancelButton:active {
+  color: #333;
+  background: #eee;
+  -moz-box-shadow: 0 0 .5em rgba(0, 0, 0, .8) inset;
+  -webkit-box-shadow: 0 0 .5em rgba(0, 0, 0, .8) inset;
+  box-shadow: 0 0 .5em rgba(0, 0, 0, .8) inset;
+}
+
+#hiddenInquiryCancelButton {
+  background: #9b9b9b;
+}
+
+
+@media screen and (max-width: 550px) { 
+
+
+	#hiddenInquirySenderEmail {
+		width:300px;
+	}
+
+	#hiddenInquiryMessage {
+		width:300px;
+	}
+
+	.hiddenInquiryForm {
+	  width: 360px;
+	  height: 550px;
+	  padding: 0 0px 0px 0px;
+	  margin: 0 auto;
+	}
+	
+	#hiddenInquiry {
+		padding-top:100px;
+	}
+
+	#hiddenInquirySendMessageButton, #hiddenInquiryCancelButton {
+	  margin: 10px 10x 10px 10px;
+	}
+
+	#hiddenInquirySendMessageButton {
+	  margin-right: 20px;
+	}
+
+}
+
+
+
+
+
+
+
+
+table.wh td, table.wh tr, table.wh {
+	border:none;
+	background-color:white;
+}
+
+
+.product_index_select {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 15px;
+    width: 100%;
+}
+.product_index_select select {
+        display: inline-block;
+        width: 100%;
+        cursor: pointer;
+        padding: 13px 18px;
+        outline: 0;
+        border: 1px hidden #000000;
+        border-radius: 0px;
+        background: #e6e6e6;
+        color: #7b7b7b;
+        font-weight:bold;
+        font-size:20px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        color:#0085ad;
+}
+.product_index_select select::-ms-expand {
+	display: none;
+}
+
+.product_index_select select:hover,
+.product_index_select select:focus {
+	color: #0085ad;
+	background: #cccccc;
+}
+.product_index_select select:disabled {
+	opacity: 0.5;
+	pointer-events: none;
+}
+        
+.product_index_select_arrow {
+    position: absolute;
+    top: 16px;
+    right: 15px;
+    width: 13px;
+    height: 13px;
+    border: solid #0085ad;
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+.product_index_select select:hover ~ .product_index_select_arrow,
+.product_index_select select:focus ~ .product_index_select_arrow {
+    border-color: #0085ad;
+}
+.product_index_select select:disabled ~ .product_index_select_arrow {
+    border-top-color: #cccccc;
+}
+
+.product_index_control {
+    font-family: arial;
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 5px;
+    padding-top: 3px;
+    cursor: pointer;
+    font-size: 16px;
+}
+    .product_index_control input {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+    }
+.product_index_control_indicator {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background: #e6e6e6;
+    border: 0px solid #000000;
+    border-radius: 0px;
+}
+.product_index_control:hover input ~ .product_index_control_indicator,
+.product_index_control input:focus ~ .product_index_control_indicator {
+    background: #cccccc;
+}
+
+.product_index_control input:checked ~ .product_index_control_indicator {
+    background: #2aa1c0;
+}
+.product_index_control:hover input:not([disabled]):checked ~ .product_index_control_indicator,
+.product_index_control input:checked:focus ~ .product_index_control_indicator {
+    background: #0e6647d;
+}
+.product_index_control input:disabled ~ .product_index_control_indicator {
+    background: #e6e6e6;
+    opacity: 0.6;
+    pointer-events: none;
+}
+.product_index_control_indicator:after {
+    box-sizing: unset;
+    content: '';
+    position: absolute;
+    display: none;
+}
+.product_index_control input:checked ~ .product_index_control_indicator:after {
+    display: block;
+}
+.product_index_control-checkbox .product_index_control_indicator:after {
+    left: 7px;
+    top: 4px;
+    width: 3px;
+    height: 8px;
+    border: solid #ffffff;
+    border-width: 0 4px 4px 0;
+    transform: rotate(45deg);
+}
+.product_index_control-checkbox input:disabled ~ .product_index_control_indicator:after {
+    border-color: #7b7b7b;
+}
+.product_index_control-checkbox .product_index_control_indicator::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-left: -1.45rem;
+    margin-top: -1.45rem;
+    background: #2aa1c0;
+    border-radius: 3rem;
+    opacity: 0.6;
+    z-index: 99999;
+    transform: scale(0);
+}
+.product_index_product_container {
+	margin:10px;
+	padding: 10px;
+	width:250px;
+}
+
+@media screen and (max-width: 550px) { 
+	.product_index_product_container {
+		width:400px;
+	}
+}
+
+
+
+
+@keyframes s-ripple {
+    0% {
+        transform: scale(0);
+    }
+    20% {
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1);
+    }
+}
+@keyframes s-ripple-dup {
+   0% {
+       transform: scale(0);
+    }
+   30% {
+        transform: scale(1);
+    }
+    60% {
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1);
+    }
+}
+.product_index_control-checkbox input + .product_index_control_indicator::before {
+    animation: s-ripple 250ms ease-out;
+}
+.product_index_control-checkbox input:checked + .product_index_control_indicator::before {
+    animation-name: s-ripple-dup;
+}
+
+	.buy_button_selection_label {
+	}
+
+	.buy_button_selection_input {
+		visibility:hidden;
+		width:0px;
+		height:0px;
+	}
+	
+	.buy_button_selection_label_content {
+		margin:10px;
+	}
+
+	.buy_button_selection_input + label, buy_button_qty {
+		cursor:pointer;
+		padding:5px;
+		line-height:3em;
+		font-size:14px;
+		font-weight:bold;
+		border:1px solid #CCCCCC;
+	}
+	.buy_button_selection_input:disabled + label {
+		cursor:default;
+		color:#CCCCCC;
+		font-weight:bold;
+		border:1px solid #CCCCCC;
+	}
+	
+	.buy_button_qty {
+		width:50px;
+		font-size:14px;
+		font-weight:bold;
+		line-height:39px;
+		margin-right:20px;
+		padding-left:7px;
+		border:1px solid #CCCCCC;
+	}
+	
+	.buy_button_selection_input:checked + label {
+		font-weight:bold;
+		border:2px solid black;
+	}
+
+	.buy_button_buy_now {
+		background-color:#F42200;
+		padding:10px 15px 10px 50px;
+		font-weight:bold;
+		font-size:17px;
+		color:white;
+		border: 0px;
+		background-image:url(/images/icon_add-to-cart.png);
+		background-position-x:10px;
+		background-position-y:10px;
+		background-repeat: no-repeat;
+		background-size:30px;
+		cursor:pointer;
+	}
+
+	.buy_button_usd {
+		color:#CCCCCC;
+		font-size:14px
+	}
+
+
+.read_more {
+	background-color: rgba(0,0,0,0.33);
+    border-width: 0px!important;
+}.read_more:hover {
+	background-color: rgba(0,0,0,0.50);
+}
+
+
+

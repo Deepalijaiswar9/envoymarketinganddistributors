@@ -1,0 +1,42 @@
+.header,
+nav ul,
+.upperHeader ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header{
+    padding: 10px 0;
+}
+
+.upperHeader{
+    background-color: #22287A;
+    padding: 10px 0;
+}
+
+.upperHeader ul a{
+    color: #fff;
+    text-decoration: none;
+}
+
+nav{
+   width: 60%;
+}
+
+.upperHeader ul li,
+nav li{
+    list-style-type: none;
+}
+
+nav li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+nav li a:hover{
+    border-bottom: 1px solid #000;
+
+}

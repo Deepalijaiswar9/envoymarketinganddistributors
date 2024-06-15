@@ -1,0 +1,40 @@
+/* universal start here======*/
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+/* universal end here======== */
+
+/* wrapper start here======== */
+.wrapper {
+  max-width: 1356px;
+  width: 90%;
+  margin: 0 auto;
+}
+/* wrapper end here========= */
+
+/* envoy logo */
+#envoy-logo,
+#CRU_logo{
+  width: 150px;
+}
+/* envoy logo */
+
+/* banner start here============= */
+.banner{
+  background-color: #000;
+}
+
+.cru-banner{
+  background-color: #CA2D30;
+  padding: 10px;
+
+}
+
+.cru-banner img{
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+/* banner end here============= */

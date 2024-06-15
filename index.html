@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HOME</title>
+</head>
+
+<body>
+  <div class="container">
+    <!-- header start here======================== -->
+    <div id="header"></div>
+    <!-- header end here======================== -->
+
+    <!-- main start here======================= -->
+     <main>
+      <section class="banner">
+        <div class="cru-banner">
+          <div class="wrapper">
+            <figure>
+              <img src="./assets/images/CRU_logo.png" alt="CRU_logo" id="CRU_logo">
+            </figure>
+            <div>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+     </main>
+    <!-- main end here========================= -->
+
+    <!-- footer start here======================== -->
+    <div id="footer"></div>
+    <!-- footer end here======================== -->
+  </div>
+
+  <!-- javascript start here ================== -->
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+    </script>
+  <script>
+    $(function () {
+      $("#header").load("header.html");
+      $("#footer").load("footer.html");
+    });
+  </script>
+  <!-- javascript end here ================== -->
+
+
+</body>
+
+</html>
