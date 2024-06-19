@@ -5,6 +5,7 @@
   font-family: sans-serif;
   box-sizing: border-box;
 }
+
 /* universal end here======== */
 
 /* wrapper start here======== */
@@ -13,28 +14,99 @@
   width: 90%;
   margin: 0 auto;
 }
+
 /* wrapper end here========= */
 
 /* envoy logo */
-#envoy-logo,
-#CRU_logo{
+#envoy-logo {
   width: 150px;
 }
+
 /* envoy logo */
 
 /* banner start here============= */
-.banner{
-  background-color: #000;
+.banner {
+  color: #fff;
+  line-height: 1.6;
+  height: fit-content !important;
 }
 
-.cru-banner{
-  background-color: #CA2D30;
+.banner #CRU_logo,
+.banner #digistor_logo,
+.banner #wiebetech_logo {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.banner #digistor_logo,
+.banner #wiebetech_logo {
+  background-color: #fff;
   padding: 10px;
-
+  width: 200px !important;
 }
 
-.cru-banner img{
-  border: 2px solid #fff;
+.cru-banner,
+.wiebetech-banner,
+.digistor-banner {
+  padding: 30px 0;
+}
+
+.banner .slick-prev,
+.banner .slick-next {
+  margin: 0 50px !important;
+}
+
+.banner .slick-prev:before,
+.banner .slick-next:before {
+  color: #fff !important;
   border-radius: 50%;
+  font-size: 30px !important;
 }
+
+.cru-banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/dc2.png");
+}
+
+.cru-banner-content {
+  float: right;
+  color: #fff;
+  font-weight: bold;
+}
+
+.wiebetech-banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/law-enforcement-2.jpg");
+
+}
+
+.cru-banner,
+.wiebetech-banner {
+  background-size: cover;
+  background-position: center;
+}
+
+.wiebetech-banner #Forensics-img1 {
+  width: 300px;
+}
+
+.wiebetech-banner .wiebetech-banner-text,
+.digistor-banner .digistor-banner-text {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wiebetech-banner .wiebetech-banner-text figcaption {
+  width: 70%;
+}
+
+.banner h1 {
+  font-size: 50px;
+}
+
+.digistor-banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/banner3.webp");
+
+}
+
 /* banner end here============= */
