@@ -1,0 +1,194 @@
+.connectUs,
+.connectUs ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.connectUs ul {
+  margin: 0 !important;
+  padding: 10px 0;
+}
+
+.upperHeader {
+  background-color: #e02b2b;
+}
+
+.upperHeader ul a {
+  color: white;
+}
+
+.upperHeader ul a:hover {
+  text-decoration: none;
+}
+
+.upperHeader ul li {
+  list-style-type: none;
+}
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  font-weight: bolder;
+  margin: auto;
+}
+.text{
+  padding-left: 15px;
+}
+
+
+.navbar {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+
+/* envoy logo */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Style  both logos */
+.envoy-logo,
+.authorised-logo {
+  height: 100px;
+}
+
+
+.authorised-logo {
+  margin-left: 30px;
+}
+
+
+@media screen and (max-width: 400px) {
+
+  .envoy-logo,
+  .authorised-logo {
+    height: 70px;
+
+  }
+}
+
+
+
+#twitter::before,
+#linkedin:before,
+#facebook::before,
+#instagram::before,
+#whatsapp::before,
+#mobile::before,
+#telephone::before,
+#mail::before {
+  font-family: "fontAwesome";
+  text-indent: 0;
+  padding: 0 5px;
+}
+
+#twitter,
+#linkedin,
+#facebook,
+#instagram,
+#whatsapp {
+  text-indent: -99999px !important;
+  display: flex !important;
+  align-items: center;
+}
+
+#twitter::before {
+  content: '\f081';
+}
+
+#linkedin:before {
+  content: '\f08c';
+}
+
+#facebook::before {
+  content: '\f230';
+}
+
+#instagram::before {
+  content: '\f16d';
+}
+
+#whatsapp::before {
+  content: '\f232';
+}
+
+#telephone::before {
+  content: '\f098';
+}
+
+#mobile::before {
+  content: '\f10b';
+}
+
+
+#mail::before {
+  content: '\f0e0';
+}
+
+.contactSpecialist {
+  text-align-last: center;
+}
+
+
+@media screen and (max-width: 991px) {
+
+  #mail,
+  #mobile,
+  #telephone {
+    text-indent: -99999px !important;
+    display: flex !important;
+    align-items: center;
+  }
+
+  #twitter::before,
+  #linkedin:before,
+  #facebook::before,
+  #instagram::before,
+  #whatsapp::before,
+  #mobile::before,
+  #telephone::before,
+  #mail::before {
+    padding: 0 !important;
+  }
+
+  nav {
+    position: relative;
+  }
+
+  .navbar-nav {
+    background-color: #000f71 !important;
+    width: 100%;
+    padding: 0 10%;
+    position: absolute;
+    align-items: center;
+    left: 0;
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+  .envoy-logo {
+    width: 100px !important;
+  }
+}
+
+@media screen and (max-width: 320px) {
+
+  #twitter::before,
+  #linkedin:before,
+  #facebook::before,
+  #instagram::before,
+  #whatsapp::before,
+  #mobile::before,
+  #telephone::before,
+  #mail::before {
+    font-size: 10px;
+  }
+
+  .connectUs ul {
+    padding: 0 !important;
+  }
+}

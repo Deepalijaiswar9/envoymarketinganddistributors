@@ -1,0 +1,41 @@
+.products{
+    padding: 50px 0;
+    text-align: center;
+}
+
+.products h1{
+    font-size: 40px;
+}
+
+.products .productsList{
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px !important;
+    position: relative;
+}
+
+.products .productsList li{
+    list-style-type: none;
+    border: 1px solid #000;
+}
+
+.products .productsList a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    display: flex;
+}
+
+.products .productsList img{
+    width: 250px;
+}
+
+.products .productsList figcaption{
+    position: absolute;
+    bottom: 0;
+    background-color: red;
+    color: #fff;
+    padding: 10px 20px;
+}

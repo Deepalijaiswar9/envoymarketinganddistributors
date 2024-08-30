@@ -1,42 +1,102 @@
-.header,
-nav ul,
-.upperHeader ul{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.header{
-    padding: 10px 0;
+/* header part for contact us  */
+.connectUs,
+.connectUs ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.upperHeader{
-    background-color: #22287A;
-    padding: 10px 0;
+.logo-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  font-weight: bolder;
+  margin: auto;
 }
 
-.upperHeader ul a{
-    color: #fff;
-    text-decoration: none;
+.connectUs ul {
+  margin: 0 !important;
+  padding: 10px 0;
 }
 
-nav{
-   width: 60%;
+.upperHeader {
+  background-color: red !important;
 }
 
-.upperHeader ul li,
-nav li{
-    list-style-type: none;
+.upperHeader ul a {
+  color: #fff;
 }
 
-nav li a{
-    text-decoration: none;
-    color: #000;
-    font-size: 15px;
-    font-weight: bold;
-    padding: 5px;
+.upperHeader ul a:hover {
+  text-decoration: none;
 }
 
-nav li a:hover{
-    border-bottom: 1px solid #000;
-
+.upperHeader ul li {
+  list-style-type: none;
 }
+
+
+#twitter::before,
+#linkedin:before,
+#facebook::before,
+#instagram::before,
+#whatsapp::before,
+#mobile::before,
+#telephone::before,
+#mail::before {
+  font-family: "fontAwesome";
+  text-indent: 0;
+  padding: 0 5px;
+}
+
+#twitter,
+#linkedin,
+#facebook,
+#instagram,
+#whatsapp {
+  text-indent: -99999px !important;
+  display: flex !important;
+  align-items: center;
+}
+
+#twitter::before {
+  content: '\f081';
+}
+
+#linkedin:before {
+  content: '\f08c';
+}
+
+#facebook::before {
+  content: '\f230';
+}
+
+#instagram::before {
+  content: '\f16d';
+}
+
+#whatsapp::before {
+  content: '\f232';
+}
+
+#telephone::before {
+  content: '\f098';
+}
+
+#mobile::before {
+  content: '\f10b';
+}
+
+
+#mail::before {
+  content: '\f0e0';
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link .navbar-nav:focus {
+  border-bottom: 1px solid red !important;
+}
+
+/* header part for contact us  */

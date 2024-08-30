@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>header</title>
+
+  <!-- slick slide css===================== -->
+  <link rel="stylesheet" type="text/css" href="./assets/slick/slick.css" />
+  <!-- // Add the new slick-theme.css if you want the default styling -->
+  <link rel="stylesheet" type="text/css" href="./assets/slick/slick-theme.css" />
+
+  <!-- css============== -->
+  <link rel="stylesheet" href="./assets/css/customers.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+
+</head>
+
+<body>
+  <section class="customers">
+    <div class="container">
+      <h1>Our Customers</h1>
+      <div class="customersList">
+        <figure>
+          <a>
+            <img src="./assets/images/prime-focus.png" alt="prime-focus" id="prime-focus"></a>
+        </figure>
+        <figure>
+          <a>
+            <img src="./assets/images/Scrabble-Logo-Transparent.png" alt="Scrabble" id="Scrabble">
+          </a>
+        </figure>
+        <figure>
+          <a>
+            <img src="./assets/images/espina-logo.png" alt="espina" id="espina"></a>
+        </figure>
+        <figure>
+          <a>
+            <img src="./assets/images/cspl-safran-transparent-fl.svg" alt="cspl-safran" id="cspl-safran"></a>
+        </figure>
+        <figure>
+          <a>
+            <img src="./assets/images/ufo.png" alt="ufo" id="ufo"></a>
+        </figure>
+        <!-- <figure>
+          <a href="https://www.ufomoviez.com/">
+            <img src="./assets/images/satara-police.jpg" alt="ufo" id="ufo"></a>
+        </figure> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- js slick slide ======================== -->
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="./assets/slick/slick.min.js"></script>
+
+  <script>
+
+    $('.customersList').slick({
+      centerMode: true,
+      centerPadding: '60px',
+      slidesToShow: 3,
+      arrows: true,
+      dots: true,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 3
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 1
+          }
+        }
+      ]
+    });
+  </script>
+</body>
+
+</html>

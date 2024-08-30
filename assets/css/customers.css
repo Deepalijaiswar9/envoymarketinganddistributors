@@ -1,0 +1,34 @@
+.customers {
+    text-align: center;
+    padding: 30px 0;
+    color: #222776;
+}
+
+.customers h1 {
+    font-size: 40px;
+}
+
+/* .customers .customersList a, */
+.customers .customersList {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: -webkit-center;
+    flex-wrap: wrap;
+    padding-top: 40px;
+}
+
+#prime-focus {
+    background-color: red !important;
+    padding:10px 20px !important;
+}
+
+.slick-next:before,
+.slick-prev:before {
+    color: #000;
+    font-size: 50px;
+}
+
+.customersList img {
+    width: 70%;
+}

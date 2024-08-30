@@ -1,0 +1,138 @@
+/* banner start here============= */
+.banner {
+  color: #fff;
+  line-height: 1.6;
+  /* height: 100vh !important; */
+  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700), rgba(255, 255, 255, 0.2)), url('../images/banner.jpg') !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+/* background-image: linear-gradient(rgba(255, 255, 255, 0.209), rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700), rgba(255, 255, 255, 0.316)), url('/assets/images/abstract-security-system-concept-fingerprint-260nw-1994907158.webp'); */
+
+
+.CRU_logo {
+  width: 100px;
+}
+
+.digistor_logo,
+.wiebetech_logo,
+.ioSafe_logo {
+  width: 200px;
+  background-color: #ddd;
+  padding: 20px;
+  margin: 0 10px;
+  border: 1px solid #000;
+}
+
+.envoy-banner {
+  padding: 150px 0 30px 0;
+}
+
+.banner .slick-prev:before,
+.banner .slick-next:before {
+  color: #fff !important;
+  border-radius: 50%;
+  font-size: 30px !important;
+}
+
+.banner .envoy-banner-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #fff;
+  font-weight: bold;
+}
+
+.banner .envoy-banner-content #DittoDX {
+  width: 300px;
+  margin-top: 100px;
+}
+
+.banner .envoy-banner-content .DittoDX figcaption {
+  margin: -10px 0 0 0;
+}
+
+.banner .envoy-banner-text {
+  margin: 0 0 0 50px;
+}
+
+.banner .envoy-banner-text li {
+  font-size: 20px;
+}
+
+.banner .distributors {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.banner .distributors figcaption {
+  font-size: 10px;
+}
+
+.distributors .embassy_logo {
+  padding: 0 !important;
+  width: 150px;
+}
+
+.distributors a {
+  color: #fff !important;
+}
+
+.distributors a:hover {
+  color: #fff !important;
+
+}
+
+@media screen and (max-width: 1200px) {
+
+  .CRU_logo {
+    width: 50px !important;
+  }
+
+  .digistor_logo,
+  .wiebetech_logo,
+  .ioSafe_logo,
+  .embassy_logo {
+    width: 100px;
+  }
+
+}
+
+
+@media screen and (max-width: 991px) {
+
+  .banner .envoy-banner-content .DittoDX {
+    display: none;
+  }
+
+  .banner .distributors {
+    padding-bottom: 10px;
+  }
+
+  .envoy-banner-content {
+    flex-direction: column;
+  }
+
+  .banner .envoy-banner-text li {
+    font-size: 15px;
+  }
+
+  .banner .envoy-banner-text {
+    margin: 0 !important;
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+  .contactSpecialist a {
+    width: 100% !important;
+    font-size: 12px !important;
+  }
+}
