@@ -50,25 +50,25 @@
 }
 
 /* Style  both logos */
-.envoy-logo,
+/* .envoy-logo,
 .authorised-logo {
   height: 100px;
-}
+} */
 
 
-.authorised-logo {
+/* .authorised-logo {
   margin-left: 30px;
-}
+} */
 
 
-@media screen and (max-width: 400px) {
+/* @media screen and (max-width: 400px) {
 
   .envoy-logo,
   .authorised-logo {
     height: 70px;
 
   }
-}
+} */
 
 
 
@@ -169,11 +169,11 @@
 
 }
 
-@media screen and (max-width: 400px) {
+/* @media screen and (max-width: 400px) {
   .envoy-logo {
     width: 100px !important;
   }
-}
+} */
 
 @media screen and (max-width: 320px) {
 

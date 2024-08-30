@@ -19,7 +19,12 @@
 
 /* envoy logo */
 .envoy-logo {
-  width: 200px;
+  width: 150px;
+}
+
+.connectUs ul {
+  margin: 0 !important;
+  padding: 5px 0;
 }
 
 .connectUs ul li{
