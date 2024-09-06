@@ -12,7 +12,7 @@ let cruProducts = {
       category: "removableDrives",
       image: "./assets/images/cru/removableDrives/DP20-Dock.png",
       defination: "External enclosure for use with DP20 removable drive carriers",
-      link: "https://www.cru-inc.com/products/dataport/dp20-dock/" // Add link for this product
+      link: "cruProduct/html/DP20-dock.html" // Add link for this product
     },
     {
       cruProductName: "DP27",
@@ -429,16 +429,19 @@ for (let i of cruProducts.data) {
   container.appendChild(name);
 
   // Product definition
-  let defination = document.createElement("h6");
-  defination.innerText = i.defination;
-  container.appendChild(defination);
+  let definitionLink = document.createElement("a");
+  definitionLink.setAttribute("href", i.link); // Link URL
+  definitionLink.setAttribute("target", "_blank"); // Open link in a new tab
+  definitionLink.innerText = i.defination;
+
+  container.appendChild(definitionLink);
 
   // Link button
   let linkButton = document.createElement("a");
   linkButton.classList.add("link-button");
   linkButton.setAttribute("href", i.link); // Link URL
   linkButton.setAttribute("target", "_blank"); // Open link in a new tab
-  linkButton.innerText = "Learn More";
+  linkButton.innerText = " ";
 
   container.appendChild(linkButton);
 

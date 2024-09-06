@@ -113,9 +113,10 @@
 }
 
 .card .link-button {
-  padding: 5px 10px;
-  color: #fff;
-  background-color: #006400;
+  /* padding: 5px 10px; */
+  font-size: 13px;
+  color: blue;
+  /* background-color: #006400; */
 }
 
 .hide {
@@ -123,5 +124,11 @@
 }
 
 .text{
-  padding-left: 15px;
+  padding-left: 10px;
 }
+
+
+/**/
+
+
+

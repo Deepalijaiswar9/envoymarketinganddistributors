@@ -1,3 +1,12 @@
+/* Ensure container has no padding or margin that affects layout */
+.container {
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: 0;
+    width: 100%;
+}
+
+/* Adjust the productName section styling */
 .productName h3 {
     padding: 5px 0;
     background-color: #ff0000;
@@ -22,47 +31,338 @@
     color: #ffffff;
     padding: 0 10px;
 }
+.dp20{
+    margin-left: -29px;
+}
 
-/*images*/
-/* .p1 img{
-    width: 100%;
-    margin: auto;
+/* Style for the slider and information section */
+.dp20 .row {
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-evenly;
 }
 
-.all-images{
-    display: flex;
-    
+.dp20-images, .dp20-text {
+    padding: 15px;
 }
-.small-images{
-    display: flex;
-    flex-direction: column;
-}
-.small-images img{
-    width: 100px;
-    border: 1px solid #000;
-    margin-bottom: 9px;
-    cursor: pointer;
-    opacity: 0.6;
-}
-.small-images img:hover{
-    opacity: 1;
-}
-.main-images img{
-    height: 500px;
-} */
 
 .slider-for img {
-    width: 20%;
+    width: 50%; /* Adjust to fit container */
+   
 }
 
 .slider-nav img {
-    width: 200px;
+    width: 100px; /* Thumbnail size */
 }
 
-/* .slider-nav .slick-list,
-.slider-nav .slick-dots {
-    width: 50%;
-} */
+/* Ensure columns are responsive */
+@media (max-width: 768px) {
+    .dp20 .row {
+        flex-direction: column;
+    }
+}
+
+/* 3 List */
+.dp20-text{
+    flex-basis: 90%;
+    
+}
+.text-red {
+    color: #ff0000;
+    font-size: 30%;
+    padding-bottom: 5%;
+    text-decoration: underline;
+}
+.text-red:visited,
+.text-red:focus,
+.text-red:active
+{
+    color: #ff0000;
+}
+#overview{
+    text-align: left;
+    margin-left: 15px;
+}
+#overview a{
+    font-size:20px;
+    font-weight:bold;
+    text-decoration: none;
+    padding: 5px;
+    margin: 10px 0;
+}
+
+.all_product_btn::before{
+  content: "\f177";
+  font-family: "fontAwesome";
+  font-weight: lighter;
+  padding-right: 10px;
+}
+
+/*button */
+.all_product_btn {
+    background-color: #ff0000; /* Red background */
+    color: #ffffff;            /* White text */
+    /* width: 20%; */
+    text-align: center;        /* Center text */
+    text-decoration: none;     /* Remove underline */
+    display: inline-block;     /* Inline-block display */
+    font-size: 10px;           /* Font size */
+    font-weight: bold;         /* Make text bold */   
+    /* margin-left: 15px;  */
+    
+}
+.all_product_btn:hover,
+.all_product_btn:focus {
+    background-color: #ffffff; 
+    color: #ff0000;            
+    border: 2px solid #ff0000; 
+}
+#overview button{
+    width: 199px;
+    height: 50px;
+    margin: 5px;
+    text-align: left;
+    border: none;
+    padding:5px;
+}
+.b1{
+    background-color: #F0B323;
+}
+.b2{
+    background-color: #d6caca;
+}
+#overview button a{
+    color: #000000;
+    font-size: 100%;
+    padding-left: 5px;
+}
+
+#overview p{
+    font-size: 14px;
+}
+#overview ul{
+    padding-left: 13px;
+}
+#overview li{
+    font-size: 12px;
+}
+
+
+
+
+/*Product Information*/
+#product-information{
+    margin-left: 20px;
+}
+h6{
+    color: #ff0000;    /*heading*/
+    font-weight: bolder;
+    margin-left: 15px;
+
+}
+#product-information p{
+    color: #000000;
+    font-weight: bolder;
+    font-weight: 50px;
+    margin-left: 10px;
+}
+.product-info-table {
+    width: 100%;
+  }
+  
+  /* Style table cells and headings */
+  /* Adjust table styles */
+.product-info-table {
+    width: 100%;
+    border-collapse: collapse; /* Ensure no extra space between cells */
+}
+
+/* Style table cells and headings */
+.product-info-table td, .product-info-table th {
+    font-size: 14px;
+    vertical-align: middle; /* Align text vertically center */
+    padding: 8px; /* Add padding for better spacing */
+}
+
+/* Highlight the table header */
+.product-info-table th {
+    color: #333;
+    text-align: left;
+}
+
+/* Style for data-left */
+.data-left {
+    font-weight: bold;
+    font-size: 12px; /* Smaller text */
+    white-space: nowrap; /* Prevent line break */
+}
+
+/* Style for data-right */
+.data-right {
+    background-color: #fff;
+    margin-left: 15px; /* Reduce the space between data-left and data-right */
+}
+
+/* Add a bit of margin to the table for spacing */
+#product-information {
+    margin-top: -26px;
+}
+
+/*Documents & Resources*/
+.resources {
+    padding: 10px 0;
+    margin-left: 10px;
+}
+.resources h5{
+    font-size: 20px;
+    font-weight: bolder;
+}
+  
+  .resource-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .resource-item img {
+    width: 60px; 
+    height: auto;
+  }
+  
+  .resource-info {
+    margin-left: 15px;
+  }
+  
+  .resource-link {
+    color: blue;
+    font-size: 15px;
+    text-decoration: none;
+  }
+  
+  .resource-link:hover {
+    text-decoration: underline;
+  }
+  
+  .resource-date {
+    font-size: 14px;
+    color: #555;
+    margin-top: 5px;
+  }
+
+  /*Product description*/
+  .product-description{
+    font-size: 90%; 
+  }
+  .product-description h5{
+    font-weight: bolder;
+  }
+  .product-description ul{
+    padding-left: 13px;
+  }
+
+
+
+ /* Related Products */
+ #related-products {
+    padding: 20px;
+    margin-left: -24px;
+  }
+  
+  .related-products-heading {
+    font-size: 20px;
+    color: #ff0000;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .related-products-container {
+    display: flex;
+    gap: 20px; 
+  }
+  
+  .product-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 200px; /* Adjust width as needed */
+  }
+  
+  .product-link {
+    text-decoration: none; 
+    color: black; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start; 
+  }
+  
+  .product-box img {
+    width: 100%;
+    height: 83px; 
+    max-width: 180px; 
+  }
+  
+  .product-info {
+    margin-top: 10px; /* space between image and text */
+  }
+  
+  .product-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .product-description {
+    margin-bottom: 5px; /* Space between description and Learn More link */
+  }
+  
+  .learn-more-link {
+    color: blue;
+    text-decoration: underline;
+  }
+
+  /*Products and Accessories*/
+
+table {
+    width: 100%;
+    border-spacing: 10px;
+    font-size: 14px; /* Decreased text size */
+  }
+  
+  /* Bold text for "Black; with lock" and "Qty" */
+  .bold-text {
+    font-weight: bold;
+  }
+  
+  /* Off-white color for "part #", "Ships in:" */
+  .off-white-text  {
+    color: #f0f0f0; /* Adjust shade as needed */
+  }
+  
+  /* Black color for "8490-6406-6500", "$117", "1-2 Days" */
+  .black-text {
+    color: black;
+  }
+  
+  /* Styling for the quantity input field */
+  input[type="text"] {
+    width: 50px; /* Decrease the size of the input field */
+    padding: 5px;
+    border: 1px solid hwb(0 62% 36%);
+    border-radius: 4px;
+  }
+  
+  /* Styling for the "Add to Cart" button */
+  input[type="submit"] {
+    padding: 6px 5px; /* Decreased button size */
+    width: 40%;
+    border: 1px solid #000000;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #f0f0f0; /* Slight change on hover */
+  }
+
+  .tr-text{
+    margin-bottom: 5px;
+  }

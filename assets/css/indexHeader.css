@@ -14,6 +14,11 @@
   background-color: #e02b2b;
 }
 
+.navbar-dark .navbar-toggler {
+    color: #fff;
+    border-color: #ffff;
+}
+
 .upperHeader ul a {
   color: white;
 }
@@ -25,14 +30,15 @@
 .upperHeader ul li {
   list-style-type: none;
 }
+
 .navbar-brand {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   font-weight: bolder;
-  margin: auto;
 }
-.text{
+
+.text {
   padding-left: 15px;
 }
 
@@ -138,7 +144,7 @@
   #mail,
   #mobile,
   #telephone {
-    text-indent: -99999px !important;
+    text-indent: -999999px !important;
     display: flex !important;
     align-items: center;
   }
@@ -169,6 +175,25 @@
 
 }
 
+
+@media screen and (max-width: 768px) {
+  .navbar-brand {
+    flex-direction: column !important;
+    align-items: start;
+  }
+
+  .text {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 490px) {
+
+  .text {
+    font-size: 10px;
+  }
+}
+
 /* @media screen and (max-width: 400px) {
   .envoy-logo {
     width: 100px !important;
@@ -191,4 +216,9 @@
   .connectUs ul {
     padding: 0 !important;
   }
+
+
 }
+
+
+/*iphone*/

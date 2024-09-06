@@ -1,10 +1,91 @@
-footer{
-    text-align: center;
-    padding: 10px;
-    background-color: red;
+footer {
+    /* text-align: center; */
+    /* padding: 10px; */
+    /* background-color: red; */
     color: #fff;
     position: sticky;
     width: 100%;
     top: 0;
     z-index: 1;
+    line-height: 2;
+}
+
+/*footer*/
+
+
+
+
+/*footer*/
+#footer a {
+    color: #fff;
+}
+
+#footer a:hover {
+    color: #fff;
+}
+
+
+
+.footerUpper {
+    background-color: #23297A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0;
+}
+
+footer ul{
+    margin: 0;
+}
+
+.envoymarketing li {
+    list-style-type: none;
+}
+
+.navigation li {
+    list-style-type: none;
+
+}
+
+/* .navigation,
+  .infocast {
+    text-align: center;
+  } */
+
+#envoyLogo {
+    font-size: 20px;
+}
+
+.footerUpper .footerUpperText {
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.footerLower,
+.footerLower a {
+    color: #fff;
+}
+
+
+.footerLower {
+    background-color: #23297A;
+    padding: 10px 0;
+    font-size: 17px;
+    text-align: center;
+}
+
+
+
+.envoy figcaption {
+    font-size: 15px;
+    color: #fff;
+
+}
+
+.envoy img {
+    width: 150px;
+    padding: 5px 0;
 }
